@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F2F2F7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Mi recetario"><meta name="description" content="El recetario de mi esposita. Tus recetas, guardadas con amor, incluso sin internet.">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icons/apple-touch-icon.png"><link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css"><title>El recetario de mi esposita</title>
+</head>
+<body>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5C8 2 4 3 2 4v16c4-2 7-1 10 1 3-2 6-3 10-1V4c-4-1-7-2-10 1Zm0 0v16"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6c-2.3-2.3-6-1.8-8.8 1.2C9.2 2.8 5.5 2.3 3.2 4.6c-3.4 3.5-.2 8.4 8.8 15 9-6.6 12.2-11.5 8.8-15Z"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.8"/><path d="m16 16 5 5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+<symbol id="i-back" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+<symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 4-6 5 7"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18H6a4 4 0 0 1-.4-8A6.5 6.5 0 0 1 18 8.7a4.7 4.7 0 0 1 0 9.3h-1M12 20V11m-3 3 3-3 3 3"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 15v5h16v-5"/></symbol>
+<symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m-4 4 4-4 4 4M4 15v5h16v-5"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L20 5"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="i-edit" viewBox="0 0 24 24"><path d="m16 3 5 5L9 20l-6 1 1-6L16 3Zm-3 3 5 5"/></symbol>
+<symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6l9-4Z"/><path d="m8 11 3 3 5-5"/></symbol>
+<symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V2m-4 4 4-4 4 4M6 9H4v13h16V9h-2"/></symbol>
+</defs></svg>
+<div id="app">
+<header class="topbar"><a class="brand" href="#" aria-label="Ir a mis recetas"><img src="./icons/icon.svg" alt="" width="36" height="36"><span>Con amor, para ti</span></a><span class="connection"><span></span><span id="connection-label">En tu iPhone</span></span></header>
+<main id="main" tabindex="-1">
+<section id="recipes-view">
+<div class="title-row"><div><p class="eyebrow">TU PEQUEÑO LIBRO DE COCINA</p><h1>El recetario<br>de mi <em>esposita.</em></h1></div><span class="title-heart" aria-hidden="true">♡</span></div>
+<div class="hero"><div><span class="pill">HECHO CON AMOR</span><h2>Cada receta,<br>un recuerdo.</h2><p>Los sabores que amas,<br>siempre contigo.</p></div><div class="hero-art" aria-hidden="true"><svg viewBox="0 0 180 180"><ellipse cx="94" cy="151" rx="64" ry="12" fill="#bac8df" opacity=".5"/><g transform="rotate(-10 85 95)"><rect x="34" y="26" width="109" height="125" rx="15" fill="#6A96D4"/><rect x="42" y="23" width="109" height="123" rx="13" fill="#ffffff"/><path d="M95 33v103" stroke="#e9dfcb" stroke-width="2"/><path d="M97 87C64 65 71 47 83 50c7 0 11 7 14 10 4-7 11-13 18-9 18 9-6 29-18 36" fill="#bc6a60"/><path d="M57 102h25m-25 9h25m27-9h24m-24 9h24m-76 9h21m31 0h20" stroke="#b7c9e2" stroke-width="3" stroke-linecap="round"/><path d="m119 23 13 0 0 23-7-5-6 5Z" fill="#c67460"/></g><path d="M153 128c-6-26 18-38 15-63m-6 35c-17-4-20-17-18-20 12 0 17 8 18 20m-6 16c16 0 21-12 20-15-12-2-18 6-20 15" stroke="#6b8968" fill="#93a488" stroke-width="2" stroke-linecap="round"/><path d="m24 51 4-8m-4 8 9 1M149 38l4-6m-4 6 7 1" stroke="#bc6a60" stroke-width="2" stroke-linecap="round"/></svg></div></div>
+<div class="collection-heading"><h2 id="collection-title">Mis recetas</h2><span id="recipe-count" class="muted">0 recetas</span></div>
+<label class="search"><svg class="icon"><use href="#i-search"/></svg><input id="search" type="search" placeholder="Encuentra un sabor…" aria-label="Buscar recetas por nombre" autocomplete="off"></label>
+<button id="new-recipe" class="primary wide"><svg class="icon"><use href="#i-plus"/></svg>Crear una receta<span>Una nueva historia para tu cocina</span></button>
+<div id="recipe-list" class="recipe-list" aria-live="polite"></div>
+</section>
+<section id="settings-view" hidden>
+<p class="eyebrow">TODO LO QUE GUARDAS CON AMOR</p><h1>Tu recetario.</h1><p class="intro">Tus recetas son tuyas. Cuídalas para que te acompañen siempre.</p>
+<div class="settings-group"><div class="info-row"><span class="setting-icon green"><svg class="icon"><use href="#i-check"/></svg></span><div><h2>Sin internet</h2><p id="offline-status">Preparando el uso sin conexión…</p></div></div><div class="info-row"><span class="setting-icon peach"><svg class="icon"><use href="#i-shield"/></svg></span><div><h2>Solo en este dispositivo</h2><p>Las recetas y las fotos se guardan aquí. No se suben a GitHub.</p></div></div></div>
+<h2 class="section-label">COPIAS DE SEGURIDAD</h2>
+<div class="settings-group"><button class="setting-action" id="export"><span class="setting-icon green"><svg class="icon"><use href="#i-download"/></svg></span><span><strong>Guardar una copia</strong><small>Incluye todas tus recetas e imágenes</small></span><svg class="icon chevron"><use href="#i-arrow"/></svg></button><button class="setting-action" id="import"><span class="setting-icon peach"><svg class="icon"><use href="#i-upload"/></svg></span><span><strong>Recuperar mis recetas</strong><small>También admite la copia de la tablet</small></span><svg class="icon chevron"><use href="#i-arrow"/></svg></button></div>
+<a id="backup-download" class="download-link" hidden>Descargar el archivo preparado</a><p class="footnote" id="backup-note">Guarda la copia en Archivos, iCloud Drive o Google Drive. Sin una copia, borrar los datos de esta aplicación puede hacer que pierdas tus recetas.</p>
+<h2 class="section-label">LLEVARLO SIEMPRE CONTIGO</h2><div class="install-card"><svg class="icon"><use href="#i-share"/></svg><div><h3>Un lugar en tu pantalla de inicio</h3><p>Abre este enlace en Safari, toca Compartir y elige «Añadir a pantalla de inicio». Después abre el nuevo icono con internet una vez y espera a que indique que está listo sin conexión.</p></div></div><p class="signature">El recetario de mi esposita ♡<br><span>Hecho para guardar tus mejores sabores · v2.0</span></p>
+</section>
+</main>
+<nav class="tabbar" aria-label="Navegación principal"><button class="tab selected" id="tab-recipes" aria-current="page"><svg class="icon"><use href="#i-book"/></svg><span>Mis recetas</span></button><button class="tab" id="tab-favorites"><svg class="icon"><use href="#i-heart"/></svg><span>Favoritas</span></button><button class="tab" id="tab-settings"><svg class="icon"><use href="#i-shield"/></svg><span>Tu recetario</span></button></nav>
+</div>
+<dialog id="reader" class="screen-dialog" aria-labelledby="reader-title"><div class="dialog-toolbar"><button class="text-button" id="reader-back"><svg class="icon"><use href="#i-back"/></svg>Recetas</button><button id="reader-edit" class="text-button">Editar<svg class="icon"><use href="#i-edit"/></svg></button></div><article class="reading"><p class="eyebrow">DE TU LIBRO DE COCINA</p><h1 id="reader-title"></h1><button id="reader-favorite" class="favorite-label"></button><button id="reader-photo-button" class="photo-button" hidden aria-label="Ampliar imagen de la receta"><img id="reader-photo" alt="Imagen de la receta"></button><h2 class="section-label">INGREDIENTES Y PREPARACIÓN</h2><div id="reader-body" class="recipe-body"></div><p class="reading-footer">Preparado con cariño, disfrutado con amor.</p><button id="delete-recipe" class="danger text-button"><svg class="icon"><use href="#i-trash"/></svg>Eliminar receta</button></article></dialog>
+<dialog id="editor" class="screen-dialog" aria-labelledby="editor-heading"><form id="recipe-form"><div class="dialog-toolbar"><button type="button" id="cancel-editor" class="text-button">Cancelar</button><button type="submit" id="save-recipe" class="save-button">Guardar<svg class="icon"><use href="#i-check"/></svg></button></div><div class="editor-content"><p class="eyebrow">DALE UN LUGAR A ESE SABOR</p><h1 id="editor-heading">Una nueva receta.</h1><p class="intro">Los pequeños detalles hacen las mejores recetas.</p><label class="field-label" for="recipe-title">NOMBRE DE LA RECETA</label><input id="recipe-title" class="field" placeholder="Por ejemplo, la torta de la abuela" maxlength="300" required autocomplete="off"><label class="field-label" for="recipe-text">INGREDIENTES E INDICACIONES</label><textarea id="recipe-text" class="field" rows="10" maxlength="100000" placeholder="Escribe tu receta o mantén pulsado aquí para pegarla…"></textarea><span class="field-label">UNA IMAGEN, SI TE APETECE</span><input id="image-input" type="file" accept="image/*" hidden><button type="button" id="choose-image" class="image-picker"><svg class="icon"><use href="#i-image"/></svg><strong>Añadir foto o captura</strong><span>Un recuerdo de cómo se prepara</span></button><div id="image-preview-box" hidden><img id="image-preview" alt="Imagen seleccionada"><button type="button" id="remove-image" class="danger text-button">Quitar imagen</button></div><p class="footnote">Se guarda en este dispositivo y funciona sin internet.</p></div></form></dialog>
+<dialog id="photo-viewer" class="photo-viewer" aria-label="Imagen de la receta ampliada"><button class="close-photo" id="close-photo" aria-label="Cerrar imagen"><svg class="icon"><use href="#i-close"/></svg></button><img id="full-photo" alt="Imagen ampliada de la receta"></dialog>
+<dialog id="confirm-dialog" class="confirm-dialog" aria-labelledby="confirm-title"><h2 id="confirm-title"></h2><p id="confirm-body"></p><div><button id="confirm-no" class="secondary">Cancelar</button><button id="confirm-yes" class="primary">Continuar</button></div></dialog>
+<input id="backup-input" type="file" accept=".json,application/json" hidden>
+<div id="toast" role="status" aria-live="polite" hidden></div><div id="busy" role="status" hidden><span class="spinner"></span><span id="busy-text">Guardando…</span></div>
+<script type="module" src="./app.js"></script>
+</body></html>
